@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  reverse-proxy:
+    build: .
+    environment:
+      - API_GATEWAY_URL='ec2-3-239-118-39.compute-1.amazonaws.com:5000'
+    ports:
+      - "2000:443"
