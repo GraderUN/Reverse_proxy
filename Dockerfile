@@ -1,6 +1,6 @@
 FROM nginx
 RUN apt-get update -qq && apt-get -y install apache2-utils
-ENV API_GATEWAY_URL='ec2-3-239-118-40.compute-1.amazonaws.com:5000'
+ENV API_GATEWAY_URL 'ec2-3-239-118-39.compute-1.amazonaws.com:5000'
 ENV NODE_ROOT /var/www/api-gateway
 WORKDIR $NODE_ROOT
 RUN mkdir log
